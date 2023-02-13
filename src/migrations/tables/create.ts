@@ -8,7 +8,7 @@ export const createObservationTable = async function () {
         db.run(
             `
             CREATE TABLE observations (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                obs_id TEXT PRIMARY KEY,
                 data JSONB
             )        
             `

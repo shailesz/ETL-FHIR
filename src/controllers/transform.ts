@@ -13,7 +13,7 @@ export const transformFile = (file: string): Promise<ITransformedData[]> => {
         dynamicTyping: true,
         worker: true,
         complete: (result) => {
-          const obj: Array<ITransformedData> = transform(result.data);
+          const obj: Array<ITransformedData> = transform(result.data as Record<string, any>[]);
 
           resolve(obj);
         },
