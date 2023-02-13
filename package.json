@@ -4,5 +4,18 @@
   "type": "module",
   "devDependencies": {
     "bun-types": "^0.3.0"
+  },
+  "dependencies": {
+    "@types/papaparse": "",
+    "papaparse": ""
+  },
+  "scripts": {
+    "start": "bun index.ts",
+    "build": "bun build index.ts",
+    "test": "bun test index.ts",
+    "lint": "bun lint index.ts",
+    "format": "bun format index.ts",
+    "migrate": "bun ./src/migrations/index.ts migrate",
+    "seed": "bun ./src/migrations/index.ts seed"
   }
 }
